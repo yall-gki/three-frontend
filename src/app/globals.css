@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+canvas{
+height: 100% !important;
+
+
+}
+
+.circle::before{
+  position: absolute;
+  content: "";
+  height: 35px ;
+  width: 35px;
+
+  border-top-right-radius: 1.5rem;
+  
+top: 0;
+right: 64px;
+box-shadow: 5px -10px 0px 0px #27272a;
+
+
+
+
+}
+.circle::after{
+  position: absolute;
+  content: "";
+  height: 35px ;
+  width: 35px;
+
+  border-top-right-radius: 1.5rem;
+  
+bottom: -35px;
+left: 30px;
+box-shadow: 5px -10px 0px 0px #27272a;
+
+
+
+
+}
+.tall_cont::after{
+
+  position: absolute;
+  content: "";
+  height: 35px ;
+  width: 35px;
+
+  border-bottom-left-radius: 1.5rem;
+  
+top: -35px;
+right: 29px;
+box-shadow: -5px 10px 0px 0px #27272a;
+
+
+
+
+}
+
+.tall_cont::before{
+z-index: 10;
+  position: absolute;
+  content: "";
+  height: 35px ;
+  width: 35px;
+
+  border-bottom-left-radius: 1.5rem;
+  
+bottom: 0;
+left: 64px;
+box-shadow: -10px 10px 0px 0px #27272a;
+
+
+
+
+}
+
